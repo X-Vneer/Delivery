@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700;1,900&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Rubik", sans-serif;
+}
+
+.main-btn {
+  @apply rounded-3xl block text-sm px-5 py-2 bg-customBlack text-white uppercase  font-semibold text-center w-[200px] mx-auto hover:-rotate-3 hover:shadow-md transition-all duration-200;
+}
+
+/* nav bar  */
+/* Hamburger Menu */
+.hamburger {
+  width: 24px;
+  height: 24px;
+  transition: all 0.25s;
+  position: relative;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 26px;
+  border-radius: 5px;
+  height: 3px;
+  background: #282828;
+  transform: rotate(0);
+  transition: all 0.5s;
+}
+
+.hamburger-middle {
+  transform: translateY(7px);
+}
+
+.hamburger-bottom {
+  transform: translateY(14px);
+}
+
+.open {
+  transform: rotate(90deg);
+  transform: translateY(0px);
+}
+
+.open .hamburger-top {
+  transform: rotate(45deg) translateY(6px) translate(6px);
+}
+
+.open .hamburger-middle {
+  display: none;
+}
+
+.open .hamburger-bottom {
+  transform: rotate(-45deg) translateY(6px) translate(-6px);
+}
+
+header .nav {
+  @apply items-center gap-6 hidden lg:flex;
+}
+header nav ul {
+  @apply uppercase font-semibold text-sm xl:text-base flex gap-4;
+}
+header nav ul a {
+  @apply hover:text-main transition-all duration-300;
+}
+
+/* mobile nav bar  */
+
+header .mobile-nav {
+  @apply lg:hidden absolute left-2 top-20 right-2 overflow-hidden h-0 transition-all duration-300 bg-customWhite backdrop-blur-sm  rounded-2xl;
+}
+
+header .mobile-nav.opened {
+  @apply h-[290px];
+}
+
+header .mobile-nav ul {
+  @apply flex-col justify-center gap-1 py-4;
+}
+header .mobile-nav ul a {
+  @apply block text-center py-2;
+}
