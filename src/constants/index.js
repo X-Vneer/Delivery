@@ -8,4 +8,27 @@ const heroText = {
   subTextAR: " هذا نص ثانوي هذا نص تجريبي هذا نص ثانوي هذا نص تجريبي",
 };
 
-export { heroText };
+const aboutUsText = {
+  cardTitle: "prject",
+  cardText1:
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis ipsam velit asperiores",
+  cardText2:
+    " reprehenderit eum distinctio soluta error quia saepe obcaecatiiure tempora totam pariatur, atque eius excepturi, libero animiveritatis?",
+  sideTitle: "Title",
+  sideText1:
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis ipsam velit asperiores",
+  sideText2:
+    " reprehenderit eum distinctio soluta error quia saepe obcaecatiiure tempora totam pariatur, atque eius excepturi, libero animiveritatis.",
+
+  cardTitleAR: "المشروع",
+  cardText1AR: "نص تجريبي فقط يجب ابداله بنص مساوي له في الطول نص تجريبي",
+  cardText2AR:
+    "نص تجريبي فقط يجب ابداله بنص مساوي له في الطول نص تجريبي نص تجريبي نص تجريبي يجب ان يتم ابداله نص تجريبي نص تجريبي",
+  sideTitleAR: "عنوان",
+  sideText1AR: "نص تجريبي فقط يجب ابداله بنص مساوي له في الطول نص تجريبي",
+
+  sideText2AR:
+    "نص تجريبي فقط يجب ابداله بنص مساوي له في الطول نص تجريبي نص تجريبي نص تجريبي يجب ان يتم ابداله نص تجريبي نص تجريبي",
+};
+
+export { heroText, aboutUsText };
