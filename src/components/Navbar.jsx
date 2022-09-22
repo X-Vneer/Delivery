@@ -1,34 +1,91 @@
 import React, { useState } from "react";
 import { logo } from "../assets";
-import Button from "./Button";
 
 const Navbar = () => {
   const [opened, setOpened] = useState(false);
+  const [lang, setLang] = useState("En");
   return (
-    <header>
+    <header dir={lang === "En" ? "ltr" : "rtl"}>
       <div className="container relative py-2">
         <div className="flex items-center justify-between">
           <img className="fill-main  h-12 lg:h-14" src={logo} alt="logo" />
-          <nav className="nav">
-            <ul>
-              <li>
-                <a href="#home">Home</a>
-              </li>
-              <li>
-                <a href="#about-us">About us</a>
-              </li>
-              <li>
-                <a href="#terms-&-conditions">terms & conditions </a>
-              </li>
-              <li>
-                <a href="#become-a-courier">become a courier </a>
-              </li>
-              <li>
-                <a href="#contact-us">contact us</a>
-              </li>
-            </ul>
-            <Button text="become a courier" />
-          </nav>
+
+          {lang === "En" && (
+            <nav className="nav">
+              <ul>
+                <li>
+                  <a href="#home">Home</a>
+                </li>
+                <li>
+                  <a href="#about-us">About us</a>
+                </li>
+                <li>
+                  <a href="#terms-&-conditions">terms & conditions </a>
+                </li>
+                <li>
+                  <a href="#become-a-courier">become a courier </a>
+                </li>
+                <li>
+                  <a href="#contact-us">contact us</a>
+                </li>
+                <li>
+                  <select
+                    name="lang"
+                    id="lang"
+                    className="hover:text-main transition-all duration-300 focus:outline-none uppercase mx-auto"
+                    value={lang}
+                    onChange={(e) => {
+                      setLang(e.target.value);
+                    }}
+                  >
+                    <option value="En">en</option>
+                    <option value="Ar">ar</option>
+                  </select>
+                </li>
+              </ul>
+              <a href="#become-a-courier" className="main-btn">
+                become a courier
+              </a>
+            </nav>
+          )}
+          {lang === "Ar" && (
+            <nav className="nav">
+              <ul>
+                <li>
+                  <a href="#home">رئيسية</a>
+                </li>
+                <li>
+                  <a href="#about-us">من نحن</a>
+                </li>
+                <li>
+                  <a href="#terms-&-conditions">الشروط و الاحكام </a>
+                </li>
+                <li>
+                  <a href="#become-a-courier">كن موصلاً </a>
+                </li>
+                <li>
+                  <a href="#contact-us">توصل معنا</a>
+                </li>
+                <li>
+                  <select
+                    name="lang"
+                    id="lang"
+                    className="hover:text-main transition-all duration-300 focus:outline-none uppercase mx-auto"
+                    value={lang}
+                    onChange={(e) => {
+                      setLang(e.target.value);
+                    }}
+                  >
+                    <option value="En">en</option>
+                    <option value="Ar">ar</option>
+                  </select>
+                </li>
+              </ul>
+              <a href="#become-a-courier" className="main-btn">
+                كن موصلاً
+              </a>
+            </nav>
+          )}
           {/* mobile nav */}
           <button
             id="menu-btn"
@@ -44,24 +101,78 @@ const Navbar = () => {
             <span className="hamburger-bottom"></span>
           </button>
           <nav className={`mobile-nav ${opened ? "opened" : ""}`}>
-            <ul>
-              <li>
-                <a href="#home">Home</a>
-              </li>
-              <li>
-                <a href="#about-us">About us</a>
-              </li>
-              <li>
-                <a href="#terms-&-conditions">terms & conditions </a>
-              </li>
-              <li>
-                <a href="#become-a-courier">become a courier </a>
-              </li>
-              <li>
-                <a href="#contact-us">contact us</a>
-              </li>
-            </ul>
-            <Button text="become a courier" />
+            {lang === "En" && (
+              <>
+                <ul>
+                  <li>
+                    <a href="#home">Home</a>
+                  </li>
+                  <li>
+                    <a href="#about-us">About us</a>
+                  </li>
+                  <li>
+                    <a href="#terms-&-conditions">terms & conditions </a>
+                  </li>
+                  <li>
+                    <a href="#become-a-courier">become a courier </a>
+                  </li>
+                  <li>
+                    <a href="#contact-us">contact us</a>
+                  </li>
+                  <select
+                    name="lang"
+                    id="lang"
+                    className="hover:text-main transition-all duration-300 focus:outline-none uppercase mx-auto bg-customWhite"
+                    value={lang}
+                    onChange={(e) => {
+                      setLang(e.target.value);
+                    }}
+                  >
+                    <option value="En">en</option>
+                    <option value="Ar">ar</option>
+                  </select>
+                </ul>
+                <a href="#become-a-courier" className="main-btn">
+                  become a courier
+                </a>
+              </>
+            )}
+            {lang === "Ar" && (
+              <>
+                <ul>
+                  <li>
+                    <a href="#home">رئيسية</a>
+                  </li>
+                  <li>
+                    <a href="#about-us">من نحن</a>
+                  </li>
+                  <li>
+                    <a href="#terms-&-conditions">الشروط والاحكام</a>
+                  </li>
+                  <li>
+                    <a href="#become-a-courier">كن موصلاً </a>
+                  </li>
+                  <li>
+                    <a href="#contact-us">تواصل معنا</a>
+                  </li>
+                  <select
+                    name="lang"
+                    id="lang"
+                    className="hover:text-main transition-all duration-300 focus:outline-none uppercase mx-auto bg-customWhite"
+                    value={lang}
+                    onChange={(e) => {
+                      setLang(e.target.value);
+                    }}
+                  >
+                    <option value="En">en</option>
+                    <option value="Ar">ar</option>
+                  </select>
+                </ul>
+                <a href="#become-a-courier" className="main-btn">
+                  كن موصلاً
+                </a>
+              </>
+            )}
           </nav>
         </div>
       </div>

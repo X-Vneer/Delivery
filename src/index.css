@@ -12,7 +12,7 @@ body {
 }
 
 .main-btn {
-  @apply rounded-3xl block text-sm px-5 py-2 bg-customBlack text-white uppercase  font-semibold text-center w-[200px] mx-auto hover:-rotate-3 hover:shadow-md transition-all duration-200;
+  @apply rounded-3xl block text-sm px-3 py-2 bg-customBlack text-white uppercase  font-semibold text-center w-[180px] mx-auto hover:-rotate-3 hover:shadow-md transition-all duration-200;
 }
 
 /* nav bar  */
@@ -53,6 +53,7 @@ body {
 
 .open .hamburger-top {
   transform: rotate(45deg) translateY(6px) translate(6px);
+  @apply bg-main;
 }
 
 .open .hamburger-middle {
@@ -61,13 +62,14 @@ body {
 
 .open .hamburger-bottom {
   transform: rotate(-45deg) translateY(6px) translate(-6px);
+  @apply bg-main;
 }
 
 header .nav {
-  @apply items-center gap-6 hidden lg:flex;
+  @apply items-center gap-5 hidden lg:flex;
 }
 header nav ul {
-  @apply uppercase font-semibold text-sm xl:text-base flex gap-4;
+  @apply uppercase font-semibold text-[13px] xl:text-base flex gap-3;
 }
 header nav ul a {
   @apply hover:text-main transition-all duration-300;
