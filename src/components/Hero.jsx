@@ -52,7 +52,7 @@ const Hero = ({ lang }) => {
       className={lang === "Ar" ? "font-[Tajawal]" : ""}
     >
       <div className="container pt-10 pb-14">
-        <div className="flex gap-6 items-center flex-col-reverse md:flex-row">
+        <div className="flex gap-6 items-center justify-between flex-col-reverse md:flex-row">
           <div className="md:w-1/2 ">
             {lang === "En" && (
               <div>

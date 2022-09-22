@@ -91,3 +91,28 @@ header .mobile-nav ul {
 header .mobile-nav ul a {
   @apply block text-center py-2;
 }
+
+/* section divider  */
+.wrapper {
+  width: calc(100% + 20px);
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.wrapper div {
+  animation: stripMove 30s linear infinite;
+}
+.wrapper.second div {
+  animation: stripMove 30s linear infinite reverse;
+}
+
+@keyframes stripMove {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-50%);
+  }
+}

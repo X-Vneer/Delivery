@@ -3,7 +3,7 @@ const heroText = {
   mainWord: "Delivery",
   subText:
     "this is a sub text, this is a sub text this is a sub text, this is a sub text",
-  titleAR: " هنا نص بهذاالطول",
+  titleAR: " هنا نص تجريبي بهذاالطول",
   mainWordAR: "دليفري",
   subTextAR: " هذا نص ثانوي هذا نص تجريبي هذا نص ثانوي هذا نص تجريبي",
 };

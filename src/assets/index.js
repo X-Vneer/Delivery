@@ -6,5 +6,16 @@ import image2 from "./image-2.jpg";
 import image3 from "./image-3.jpg";
 import image4 from "./image-4.jpg";
 import image5 from "./image-5.jpg";
+import logoSymbol from "./logo-symbol.svg";
 
-export { logo, googlePlay, AppStore, image1, image2, image3, image4, image5 };
+export {
+  logo,
+  googlePlay,
+  AppStore,
+  image1,
+  image2,
+  image3,
+  image4,
+  image5,
+  logoSymbol,
+};
