@@ -78,11 +78,11 @@ header nav ul a {
 /* mobile nav bar  */
 
 header .mobile-nav {
-  @apply lg:hidden absolute left-2 top-20 right-2 overflow-hidden h-0 transition-all duration-300 bg-customWhite backdrop-blur-sm  rounded-2xl;
+  @apply lg:hidden absolute left-2 top-20 right-2 overflow-hidden h-0 transition-all duration-300 bg-customWhite backdrop-blur-sm  rounded-2xl z-50;
 }
 
 header .mobile-nav.opened {
-  @apply h-[290px];
+  @apply h-[300px];
 }
 
 header .mobile-nav ul {

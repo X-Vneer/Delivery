@@ -1,11 +1,14 @@
 import React, { useState } from "react";
 import { logo } from "../assets";
 
-const Navbar = () => {
+const Navbar = ({ lang, setLang }) => {
   const [opened, setOpened] = useState(false);
-  const [lang, setLang] = useState("En");
+
   return (
-    <header dir={lang === "En" ? "ltr" : "rtl"}>
+    <header
+      dir={lang === "En" ? "ltr" : "rtl"}
+      className={lang === "Ar" ? "font-[Tajawal]" : ""}
+    >
       <div className="container relative py-2">
         <div className="flex items-center justify-between">
           <img className="fill-main  h-12 lg:h-14" src={logo} alt="logo" />
@@ -64,7 +67,7 @@ const Navbar = () => {
                   <a href="#become-a-courier">كن موصلاً </a>
                 </li>
                 <li>
-                  <a href="#contact-us">توصل معنا</a>
+                  <a href="#contact-us">تواصل معنا</a>
                 </li>
                 <li>
                   <select
