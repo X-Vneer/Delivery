@@ -1,5 +1,6 @@
 import { useState } from "react";
 import AboutUs from "./components/AboutUs";
+import BACSection from "./components/BACSection";
 
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
@@ -13,6 +14,7 @@ function App() {
       <Hero lang={lang} />
       <SectionDivider />
       <AboutUs lang={lang} />
+      <BACSection lang={lang} />
     </>
   );
 }

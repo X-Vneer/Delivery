@@ -31,4 +31,12 @@ const aboutUsText = {
     "نص تجريبي فقط يجب ابداله بنص مساوي له في الطول نص تجريبي نص تجريبي نص تجريبي يجب ان يتم ابداله نص تجريبي نص تجريبي",
 };
 
-export { heroText, aboutUsText };
+const BACCardText = {
+  title: "Are you looking for your first job?",
+  subText: "Become a courier and start earning now!",
+  btn: "Apply now",
+  titleAR: "هل تبحث عن ظيفتك الاولة؟",
+  subTextAR: "كن موصلاً وابدا بجني المال",
+  btnAR: "قدم الآن",
+};
+export { heroText, aboutUsText, BACCardText };

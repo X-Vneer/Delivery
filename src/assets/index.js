@@ -7,6 +7,7 @@ import image3 from "./image-3.jpg";
 import image4 from "./image-4.jpg";
 import image5 from "./image-5.jpg";
 import logoSymbol from "./logo-symbol.svg";
+import BACimage from "./BACimage.jpg";
 
 export {
   logo,
@@ -18,4 +19,5 @@ export {
   image4,
   image5,
   logoSymbol,
+  BACimage,
 };
