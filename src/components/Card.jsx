@@ -33,7 +33,11 @@ const Card = ({ lang, isInView, Text }) => {
     }),
   };
   return (
-    <div className="max-w-[390px] relative m-8 pointer-events-none">
+    <div
+      className={`max-w-[390px] relative m-8 pointer-events-none ${
+        lang === "En" ? "" : "text-right"
+      }`}
+    >
       <motion.div
         variants={varaints}
         initial="hidden"

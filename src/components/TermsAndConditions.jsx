@@ -16,6 +16,7 @@ const TermsAndConditions = ({ lang }) => {
       <Card lang={lang} isInView={isInView} Text={TermsAndConditionsText} />
     );
   }
+  console.log("hi");
 
   return (
     <section
@@ -29,9 +30,16 @@ const TermsAndConditions = ({ lang }) => {
       ref={ref}
     >
       <div className="container">
-        <h3 className="font-semibold text-white mb-10 text-2xl">
-          #Terms & Conditions
-        </h3>
+        {lang === "En" && (
+          <h3 className="font-semibold text-white mb-10 text-2xl">
+            #Terms & Conditions
+          </h3>
+        )}
+        {lang === "Ar" && (
+          <h3 className="font-semibold text-white mb-10 text-2xl">
+            #الشروط و الاحكام
+          </h3>
+        )}
         <div>
           <AliceCarousel
             mouseTracking

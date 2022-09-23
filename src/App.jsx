@@ -1,7 +1,7 @@
 import { useState } from "react";
 import AboutUs from "./components/AboutUs";
 import BACSection from "./components/BACSection";
-
+import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import SectionDivider from "./components/SectionDivider";
@@ -19,6 +19,7 @@ function App() {
       <SingleDivider />
       <TermsAndConditions lang={lang} />
       <BACSection lang={lang} />
+      <Footer lang={lang} />
     </>
   );
 }
