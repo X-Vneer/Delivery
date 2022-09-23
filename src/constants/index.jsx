@@ -39,4 +39,25 @@ const BACCardText = {
   subTextAR: "كن موصلاً وابدا بجني المال",
   btnAR: "قدم الآن",
 };
-export { heroText, aboutUsText, BACCardText };
+
+const BACFeaturesText = {
+  title: (
+    <>
+      we imporved <br /> the delivery
+    </>
+  ),
+  feature1: "feature 1",
+  feature2: "feature 2",
+  feature3: "feature 3",
+  feature4: "feature 4",
+  titleAR: (
+    <>
+      لقد طورنا <br /> التوصيل
+    </>
+  ),
+  feature1AR: "الميزة 1",
+  feature2AR: "الميزة 2",
+  feature3AR: "الميزة 3",
+  feature4AR: "الميزة 4",
+};
+export { heroText, aboutUsText, BACCardText, BACFeaturesText };

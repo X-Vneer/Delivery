@@ -1,6 +1,6 @@
 import { logoSymbol } from "../assets";
 
-const SectionDivider = () => {
+const SingleDivider = () => {
   let myArray = [];
   for (let i = 0; i < 25; i++) {
     const ele = (
@@ -17,11 +17,8 @@ const SectionDivider = () => {
 
   return (
     <section>
-      <div className="py-20 overflow-hidden -mb-[85px]">
-        <div className="overflow-x-hidden bg-secondry rotate-3 lg:rotate-2  wrapper ">
-          <div className="flex gap-3 w-fit">{myArray}</div>
-        </div>
-        <div className="overflow-x-hidden bg-main -mt-[55px] md:-mt-[55px] lg:-mt-[68px] -rotate-3 lg:-rotate-2 wrapper second ">
+      <div className="overflow-hidden">
+        <div className="overflow-x-hidden bg-gray-300 wrapper second ">
           <div className="flex gap-3 w-fit">{myArray}</div>
         </div>
       </div>
@@ -29,4 +26,4 @@ const SectionDivider = () => {
   );
 };
 
-export default SectionDivider;
+export default SingleDivider;

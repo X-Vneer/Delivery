@@ -106,13 +106,62 @@ header .mobile-nav ul a {
   animation: stripMove 30s linear infinite reverse;
 }
 
+/* BAC section  */
+.BACCard {
+  @apply px-6 sm:px-8 py-10 sm:py-20 uppercase bg-main rounded-3xl relative sm:min-w-[350px] max-w-[370px] m-8;
+}
+.BACCard .moving {
+  animation: Moving 10s linear infinite reverse;
+}
+.BACCard .movingRTL {
+  animation: MovingRTL 10s linear infinite reverse;
+}
+
+.vertical {
+  transform-origin: left top;
+}
+.vertical-sec {
+  transform-origin: right top;
+}
+
+.features img {
+  @apply translate-y-10  absolute opacity-0 z-0 transition-all duration-500;
+}
+
+.features .active-image {
+  @apply translate-y-0 opacity-100 z-[1];
+}
+.features-item {
+  @apply py-1 px-4 uppercase hover:text-main hover:px-6 text-[26px] duration-300 transition-all flex gap-5 items-center;
+}
+
 @keyframes stripMove {
   0% {
     -webkit-transform: translateX(0);
     transform: translateX(0);
   }
   100% {
-    -webkit-transform: translateX(-100%);
+    -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
+  }
+}
+@keyframes Moving {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+}
+@keyframes MovingRTL {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(50%);
+    transform: translateX(50%);
   }
 }

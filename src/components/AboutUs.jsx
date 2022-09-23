@@ -1,6 +1,6 @@
 import { aboutUsText } from "../constants";
-import { useRef } from "react";
 import AboutUsCard from "./AboutUsCard";
+import { useRef } from "react";
 import { useInView, motion } from "framer-motion";
 const AboutUs = ({ lang }) => {
   const ref = useRef(null);
@@ -28,11 +28,11 @@ const AboutUs = ({ lang }) => {
       dir={lang === "En" ? "ltr" : "rtl"}
       className={
         lang === "Ar"
-          ? "font-[Tajawal] bg-customBlack py-10"
-          : "bg-customBlack py-10"
+          ? "font-[Tajawal] bg-customBlack pb-20"
+          : "bg-customBlack py-20"
       }
     >
-      <div className="container overflow-hidden">
+      <div className="container pt-10 overflow-hidden">
         {lang === "En" && (
           <h1 className="text-2xl font-semibold text-customWhite mb-4">
             #About US

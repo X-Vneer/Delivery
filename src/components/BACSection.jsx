@@ -2,6 +2,7 @@ import React from "react";
 import { BACimage } from "../assets";
 import { motion } from "framer-motion";
 import BACCard from "./BACCard";
+import BACOptions from "./BACOptions";
 
 const BACSection = ({ lang }) => {
   return (
@@ -25,6 +26,14 @@ const BACSection = ({ lang }) => {
               transition={{
                 duration: 0.4,
               }}
+              whileTap={{
+                borderRadius: "28px",
+                transition: {
+                  type: "spring",
+                  stiffness: 150,
+                  duration: 1,
+                },
+              }}
               whileHover={{
                 borderRadius: "28px",
                 transition: {
@@ -34,10 +43,14 @@ const BACSection = ({ lang }) => {
                 },
               }}
               src={BACimage}
-              className=" w-full min-w-[290px] sm:min-w-[380px]  max-w-[450px] "
+              className=" w-full min-w-[290px] sm:min-w-[360px]  max-w-[450px] "
               alt="A courier"
             />
           </div>
+        </div>
+        {/*  */}
+        <div>
+          <BACOptions lang={lang} />
         </div>
       </div>
     </section>
