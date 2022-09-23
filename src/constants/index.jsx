@@ -31,11 +31,34 @@ const aboutUsText = {
     "نص تجريبي فقط يجب ابداله بنص مساوي له في الطول نص تجريبي نص تجريبي نص تجريبي يجب ان يتم ابداله نص تجريبي نص تجريبي",
 };
 
+const TermsAndConditionsText = {
+  cardTitle: "Term or A conditions",
+  cardText1:
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis ipsam velit asperiores",
+  cardText2:
+    " reprehenderit eum distinctio soluta error quia saepe obcaecatiiure tempora totam pariatur, atque eius excepturi, libero animiveritatis?",
+  sideTitle: "Title",
+  sideText1:
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis ipsam velit asperiores",
+  sideText2:
+    " reprehenderit eum distinctio soluta error quia saepe obcaecatiiure tempora totam pariatur, atque eius excepturi, libero animiveritatis.",
+
+  cardTitleAR: "عنوان الشرط",
+  cardText1AR: "نص تجريبي فقط يجب ابداله بنص مساوي له في الطول نص تجريبي",
+  cardText2AR:
+    "نص تجريبي فقط يجب ابداله بنص مساوي له في الطول نص تجريبي نص تجريبي نص تجريبي يجب ان يتم ابداله نص تجريبي نص تجريبي",
+  sideTitleAR: "عنوان",
+  sideText1AR: "نص تجريبي فقط يجب ابداله بنص مساوي له في الطول نص تجريبي",
+
+  sideText2AR:
+    "نص تجريبي فقط يجب ابداله بنص مساوي له في الطول نص تجريبي نص تجريبي نص تجريبي يجب ان يتم ابداله نص تجريبي نص تجريبي",
+};
+
 const BACCardText = {
   title: "Are you looking for your first job?",
   subText: "Become a courier and start earning now!",
   btn: "Apply now",
-  titleAR: "هل تبحث عن ظيفتك الاولة؟",
+  titleAR: "هل تبحث عن وظيفتك الاولة؟",
   subTextAR: "كن موصلاً وابدا بجني المال",
   btnAR: "قدم الآن",
 };
@@ -60,4 +83,10 @@ const BACFeaturesText = {
   feature3AR: "الميزة 3",
   feature4AR: "الميزة 4",
 };
-export { heroText, aboutUsText, BACCardText, BACFeaturesText };
+export {
+  heroText,
+  aboutUsText,
+  BACCardText,
+  BACFeaturesText,
+  TermsAndConditionsText,
+};

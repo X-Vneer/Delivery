@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
-import { aboutUsText } from "../constants";
 
-const AboutUsCard = ({ lang, isInView }) => {
+const Card = ({ lang, isInView, Text }) => {
   const varaints = {
     hidden: {
       opacity: 0,
@@ -34,7 +33,7 @@ const AboutUsCard = ({ lang, isInView }) => {
     }),
   };
   return (
-    <div className="max-w-[390px] relative m-8">
+    <div className="max-w-[390px] relative m-8 pointer-events-none">
       <motion.div
         variants={varaints}
         initial="hidden"
@@ -50,7 +49,7 @@ const AboutUsCard = ({ lang, isInView }) => {
             animate={isInView && "visible"}
             className="font-semibold mb-3 text-xl"
           >
-            {aboutUsText.cardTitle}
+            {Text.cardTitle}
           </motion.h3>
 
           <motion.p
@@ -60,7 +59,7 @@ const AboutUsCard = ({ lang, isInView }) => {
             animate={isInView && "visible"}
             className="pb-6 text-gray-700 "
           >
-            {aboutUsText.cardText1}
+            {Text.cardText1}
           </motion.p>
 
           <motion.p
@@ -70,7 +69,7 @@ const AboutUsCard = ({ lang, isInView }) => {
             animate={isInView && "visible"}
             className=" text-gray-700 "
           >
-            {aboutUsText.cardText2}
+            {Text.cardText2}
           </motion.p>
         </div>
       )}
@@ -83,7 +82,7 @@ const AboutUsCard = ({ lang, isInView }) => {
             animate={isInView && "visible"}
             className="font-semibold mb-3 text-xl"
           >
-            {aboutUsText.cardTitleAR}
+            {Text.cardTitleAR}
           </motion.h3>
 
           <motion.p
@@ -93,7 +92,7 @@ const AboutUsCard = ({ lang, isInView }) => {
             animate={isInView && "visible"}
             className="pb-6 text-gray-700 "
           >
-            {aboutUsText.cardText1AR}
+            {Text.cardText1AR}
           </motion.p>
 
           <motion.p
@@ -103,7 +102,7 @@ const AboutUsCard = ({ lang, isInView }) => {
             animate={isInView && "visible"}
             className=" text-gray-700 "
           >
-            {aboutUsText.cardText2AR}
+            {Text.cardText2AR}
           </motion.p>
         </div>
       )}
@@ -111,4 +110,4 @@ const AboutUsCard = ({ lang, isInView }) => {
   );
 };
 
-export default AboutUsCard;
+export default Card;

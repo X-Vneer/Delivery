@@ -23,7 +23,7 @@ const Navbar = ({ lang, setLang }) => {
                   <a href="#about-us">About us</a>
                 </li>
                 <li>
-                  <a href="#terms-&-conditions">terms & conditions </a>
+                  <a href="#terms-and-conditions">terms & conditions </a>
                 </li>
                 <li>
                   <a href="#become-a-courier">become a courier </a>
@@ -61,7 +61,7 @@ const Navbar = ({ lang, setLang }) => {
                   <a href="#about-us">من نحن</a>
                 </li>
                 <li>
-                  <a href="#terms-&-conditions">الشروط و الاحكام </a>
+                  <a href="#terms-and-conditions">الشروط و الاحكام </a>
                 </li>
                 <li>
                   <a href="#become-a-courier">كن موصلاً </a>
@@ -114,7 +114,7 @@ const Navbar = ({ lang, setLang }) => {
                     <a href="#about-us">About us</a>
                   </li>
                   <li>
-                    <a href="#terms-&-conditions">terms & conditions </a>
+                    <a href="#terms-and-conditions">terms & conditions </a>
                   </li>
                   <li>
                     <a href="#become-a-courier">become a courier </a>
@@ -150,7 +150,7 @@ const Navbar = ({ lang, setLang }) => {
                     <a href="#about-us">من نحن</a>
                   </li>
                   <li>
-                    <a href="#terms-&-conditions">الشروط والاحكام</a>
+                    <a href="#terms-and-conditions">الشروط والاحكام</a>
                   </li>
                   <li>
                     <a href="#become-a-courier">كن موصلاً </a>

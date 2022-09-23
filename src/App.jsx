@@ -6,6 +6,7 @@ import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import SectionDivider from "./components/SectionDivider";
 import SingleDivider from "./components/SingleDivider";
+import TermsAndConditions from "./components/TermsAndConditions";
 
 function App() {
   const [lang, setLang] = useState("En");
@@ -16,6 +17,7 @@ function App() {
       <SectionDivider />
       <AboutUs lang={lang} />
       <SingleDivider />
+      <TermsAndConditions lang={lang} />
       <BACSection lang={lang} />
     </>
   );

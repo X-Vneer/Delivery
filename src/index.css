@@ -105,6 +105,18 @@ header .mobile-nav ul a {
 .wrapper.second div {
   animation: stripMove 30s linear infinite reverse;
 }
+/* terms and conditions */
+#terms-and-conditions .alice-carousel__wrapper {
+  padding: 50px 0;
+}
+.alice-carousel__dots-item {
+  @apply transition-all duration-300;
+}
+.alice-carousel__dots-item.__active {
+  background-color: #00dbd1 !important;
+  width: 30px;
+  border-radius: 5px;
+}
 
 /* BAC section  */
 .BACCard {

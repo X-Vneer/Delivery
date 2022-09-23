@@ -1,5 +1,7 @@
 import { aboutUsText } from "../constants";
-import AboutUsCard from "./AboutUsCard";
+
+import Card from "./Card";
+
 import { useRef } from "react";
 import { useInView, motion } from "framer-motion";
 const AboutUs = ({ lang }) => {
@@ -28,7 +30,7 @@ const AboutUs = ({ lang }) => {
       dir={lang === "En" ? "ltr" : "rtl"}
       className={
         lang === "Ar"
-          ? "font-[Tajawal] bg-customBlack pb-20"
+          ? "font-[Tajawal] bg-customBlack py-20"
           : "bg-customBlack py-20"
       }
     >
@@ -44,7 +46,7 @@ const AboutUs = ({ lang }) => {
           </h1>
         )}
         <div className="flex items-center flex-col  md:flex-row gap-32  py-10">
-          <AboutUsCard lang={lang} isInView={isInView} />
+          <Card lang={lang} isInView={isInView} Text={aboutUsText} />
 
           {/*  */}
           {lang === "En" && (

@@ -70,11 +70,11 @@ const BACCard = ({ lang }) => {
         <div>
           <h1 className="text-white font-semibold leading-tight text-[24px] mb-3">
             {BACCardText.titleAR}
+            <img src={bag} className="inline h-7 -mt-2" alt="bag" />
           </h1>
           <p className="text-white mb-6 text-sm">{BACCardText.subTextAR}</p>
           <a href="#become-a-courier" className="main-btn">
             {BACCardText.btnAR}
-            <img src={bag} className="inline h-7 -mt-2" alt="bag" />
           </a>
         </div>
       )}
