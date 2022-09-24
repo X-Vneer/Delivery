@@ -8,6 +8,7 @@ import SectionDivider from "./components/SectionDivider";
 import SingleDivider from "./components/SingleDivider";
 import Clints from "./components/Clints";
 import HowToOrder from "./components/HowToOrder";
+import TermsAndConditions from "./components/TermsAndConditions";
 
 function App() {
   const [lang, setLang] = useState("En");
@@ -21,6 +22,9 @@ function App() {
       <SingleDivider />
       <Clints lang={lang} />
       <BACSection lang={lang} />
+      <SingleDivider />
+
+      <TermsAndConditions lang={lang} />
       <Footer lang={lang} />
     </>
   );

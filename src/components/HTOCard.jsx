@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 const HTOCard = ({ isInView, icon, text, ind, lang }) => {
+  const delay = Math.round((ind * 0.2 + 0.2) * 100) / 100;
   return (
     <motion.div
       initial={{
@@ -13,7 +14,7 @@ const HTOCard = ({ isInView, icon, text, ind, lang }) => {
               y: 0,
               opacity: 1,
               transition: {
-                delay: ind * 0.2 + 0.2,
+                delay,
                 duration: 0.7,
               },
             }

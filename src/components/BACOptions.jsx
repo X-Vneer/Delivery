@@ -9,8 +9,8 @@ const BACOptions = ({ lang }) => {
   const [index, setIndex] = useState(1);
   return (
     <div className="features pt-20  ">
-      <div className="flex flex-col md:flex-row gap-10 items-center  ">
-        <div className="relative w-[90%] md:w-1/2 flex items-center justify-center  min-h-[400px] md:min-h-[370px] lg:min-h-[450px]">
+      <div className="flex flex-col md:flex-row gap-14 md:gap-10 items-center  ">
+        <div className="relative w-[90%] md:w-1/2 flex items-center justify-center hightS min-h-[400px] md:min-h-[370px] lg:min-h-[450px]">
           {images.map((image, ind) => {
             return (
               <img

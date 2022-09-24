@@ -2,6 +2,7 @@ import React from "react";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 import { heroText } from "../constants";
+import { motion } from "framer-motion";
 import {
   googlePlay,
   AppStore,
@@ -44,6 +45,18 @@ const items = [
     role="presentation"
   />,
 ];
+const SVGVariants = {
+  hidden: {
+    pathLength: 0,
+  },
+  visible: {
+    pathLength: 1,
+    transition: {
+      duration: 1.5,
+      ease: "easeInOut",
+    },
+  },
+};
 const Hero = ({ lang }) => {
   return (
     <main
@@ -57,7 +70,26 @@ const Hero = ({ lang }) => {
             {lang === "En" && (
               <div>
                 <h1 className="text-[55px] text-center md:text-left font-bold uppercase text-customBlack tracking-[2px] leading-tight">
-                  {heroText.title} <br /> <span>{heroText.mainWord}</span>
+                  {heroText.title} <br />{" "}
+                  <span className="inline-block relative">
+                    <svg
+                      className="absolute top-2"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 565 92"
+                    >
+                      <motion.path
+                        variants={SVGVariants}
+                        initial="hidden"
+                        animate="visible"
+                        d="M83.246 33.193c-7.645 2.243-136.128 28.625-54.162 46.922C111.05 98.412 515.7 96.346 559.886 42.098 604.073-12.15 186.419.772 138.86 11.057"
+                        stroke="#00DBD1"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                      ></motion.path>
+                    </svg>
+                    {heroText.mainWord}
+                  </span>
                 </h1>
                 <p className="text-sm text-gray-700 py-5 max-w-[310px] mx-auto md:mx-[unset] text-center md:text-left">
                   {heroText.subText}
@@ -68,7 +100,26 @@ const Hero = ({ lang }) => {
             {lang === "Ar" && (
               <div>
                 <h1 className="text-[55px] text-center md:text-right font-bold uppercase text-customBlack tracking-[2px] leading-tight">
-                  {heroText.titleAR} <br /> <span>{heroText.mainWordAR}</span>
+                  {heroText.titleAR} <br />{" "}
+                  <span className="inline-block relative">
+                    <svg
+                      className="absolute top-7 -left-2"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 565 92"
+                    >
+                      <motion.path
+                        variants={SVGVariants}
+                        initial="hidden"
+                        animate="visible"
+                        d="M83.246 33.193c-7.645 2.243-136.128 28.625-54.162 46.922C111.05 98.412 515.7 96.346 559.886 42.098 604.073-12.15 186.419.772 138.86 11.057"
+                        stroke="#00DBD1"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                      ></motion.path>
+                    </svg>
+                    {heroText.mainWordAR}
+                  </span>
                 </h1>
                 <p className="text-sm text-gray-700 py-5 max-w-[310px] mx-auto md:mx-[unset] text-center md:text-right">
                   {heroText.subTextAR}

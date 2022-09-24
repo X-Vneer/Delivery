@@ -20,6 +20,12 @@ import HTO2 from "./HTO2.jpg";
 import icon1 from "./icon1.jpg";
 import icon2 from "./icon2.jpg";
 import icon3 from "./icon3.jpg";
+import hello from "./footericon1.png";
+import email from "./email.png";
+import candy from "./candy.png";
+import terms from "./terms.png";
+import phone from "./phone.svg";
+import emailIcon from "./envelope.svg";
 
 export {
   logo,
@@ -44,4 +50,10 @@ export {
   icon1,
   icon2,
   icon3,
+  hello,
+  email,
+  candy,
+  terms,
+  phone,
+  emailIcon,
 };

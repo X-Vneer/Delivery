@@ -27,11 +27,11 @@ const Navbar = ({ lang, setLang }) => {
                   <a href="#about-us">About us</a>
                 </li>
                 <li>
-                  <a href="#clints">Clints or Partners</a>
+                  <a href="#clients">Clients or Partners</a>
                 </li>
 
                 <li>
-                  <a href="#contact-us">contact us</a>
+                  <a href="#footer">contact us</a>
                 </li>
                 <li className="relative group">
                   <span className="flex gap-1 group-hover:text-main transition-all duration-300">
@@ -89,11 +89,11 @@ const Navbar = ({ lang, setLang }) => {
                   <a href="#about-us">من نحن</a>
                 </li>
                 <li>
-                  <a href="#clints">الزبائن والشركاء </a>
+                  <a href="#clients">الزبائن والشركاء </a>
                 </li>
 
                 <li>
-                  <a href="#contact-us">تواصل معنا</a>
+                  <a href="#footer">تواصل معنا</a>
                 </li>
                 <li className="relative group">
                   <span className="flex gap-1 group-hover:text-main transition-all duration-300">
@@ -154,11 +154,11 @@ const Navbar = ({ lang, setLang }) => {
                     <a href="#about-us">About us</a>
                   </li>
                   <li>
-                    <a href="#clints">Clints or Partners</a>
+                    <a href="#clients">Clients or Partners</a>
                   </li>
 
                   <li>
-                    <a href="#contact-us">contact us</a>
+                    <a href="#footer">contact us</a>
                   </li>
                   <li className="relative group max-w-[100px] mx-auto">
                     <span className="flex gap-1 group-hover:text-main transition-all duration-300">
@@ -204,11 +204,11 @@ const Navbar = ({ lang, setLang }) => {
                     <a href="#about-us">من نحن</a>
                   </li>
                   <li>
-                    <a href="#clints">الزبائن والشركاء </a>
+                    <a href="#clients">الزبائن والشركاء </a>
                   </li>
 
                   <li>
-                    <a href="#contact-us">تواصل معنا</a>
+                    <a href="#footer">تواصل معنا</a>
                   </li>
                   <li className="relative group max-w-[100px] mx-auto">
                     <span className="flex gap-1 group-hover:text-main transition-all duration-300">

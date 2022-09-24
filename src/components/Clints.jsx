@@ -16,7 +16,7 @@ const Clints = ({ lang }) => {
 
   return (
     <section
-      id="clints"
+      id="clients"
       dir={lang === "En" ? "ltr" : "rtl"}
       className={
         lang === "Ar"
@@ -27,12 +27,38 @@ const Clints = ({ lang }) => {
     >
       <div className="container">
         {lang === "En" && (
-          <h3 className="font-semibold text-white mb-10 text-2xl">
+          <h3 className="font-semibold text-white mb-10 text-2xl relative">
+            <svg
+              className="absolute  -left-1 w-[240px]"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 565 92"
+            >
+              <path
+                d="M83.246 33.193c-7.645 2.243-136.128 28.625-54.162 46.922C111.05 98.412 515.7 96.346 559.886 42.098 604.073-12.15 186.419.772 138.86 11.057"
+                stroke="#00DBD1"
+                strokeWidth="2"
+                strokeLinecap="round"
+              ></path>
+            </svg>
             #Clints or Partners
           </h3>
         )}
         {lang === "Ar" && (
-          <h3 className="font-semibold text-white mb-10 text-2xl">
+          <h3 className="font-semibold text-white mb-10 text-2xl relative">
+            <svg
+              className="absolute top-1 -right-1 w-[200px]"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 565 92"
+            >
+              <path
+                d="M83.246 33.193c-7.645 2.243-136.128 28.625-54.162 46.922C111.05 98.412 515.7 96.346 559.886 42.098 604.073-12.15 186.419.772 138.86 11.057"
+                stroke="#00DBD1"
+                strokeWidth="2"
+                strokeLinecap="round"
+              ></path>
+            </svg>
             #الزبائن والشركاء
           </h3>
         )}
