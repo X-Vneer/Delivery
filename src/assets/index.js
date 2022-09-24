@@ -26,6 +26,9 @@ import candy from "./candy.png";
 import terms from "./terms.png";
 import phone from "./phone.svg";
 import emailIcon from "./envelope.svg";
+import tel from "./tel.png";
+import whats from "./whatsapp.png";
+import insta from "./insta.png";
 
 export {
   logo,
@@ -56,4 +59,7 @@ export {
   terms,
   phone,
   emailIcon,
+  tel,
+  insta,
+  whats,
 };

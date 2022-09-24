@@ -8,6 +8,9 @@ import {
   terms,
   phone,
   emailIcon,
+  tel,
+  whats,
+  insta,
 } from "../assets";
 import { footerText } from "../constants";
 import Icon from "./Icon";
@@ -19,11 +22,22 @@ const Footer = ({ lang }) => {
       dir={lang === "En" ? "ltr" : "rtl"}
       className={
         lang === "Ar"
-          ? "font-[Tajawal] bg-customBlack py-20"
-          : "bg-customBlack py-20"
+          ? "font-[Tajawal] bg-customBlack pb-20 pt-10"
+          : "bg-customBlack pb-20 pt-10"
       }
     >
       <div className="container py-5">
+        <div className="flex gap-5  justify-center sm:justify-end mb-5">
+          <a href="">
+            <img src={whats} className="w-10 bg-white rounded-full" alt="" />
+          </a>
+          <a href=" ">
+            <img src={insta} className="w-10" alt="instagram" />
+          </a>
+          <a href=" ">
+            <img src={tel} className="w-10" alt="instagram" />
+          </a>
+        </div>
         <div className="flex gap-5  sm:gap-9 mb-16">
           <Icon icon={hello} />
           <div>
