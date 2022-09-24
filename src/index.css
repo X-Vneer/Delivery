@@ -69,7 +69,7 @@ header .nav {
   @apply items-center gap-5 hidden lg:flex;
 }
 header nav ul {
-  @apply uppercase font-semibold text-[13px] xl:text-base flex gap-3;
+  @apply uppercase font-semibold text-[13px] xl:text-base flex gap-4;
 }
 header nav ul a {
   @apply hover:text-main transition-all duration-300;
@@ -82,7 +82,7 @@ header .mobile-nav {
 }
 
 header .mobile-nav.opened {
-  @apply h-[300px];
+  @apply h-[290px];
 }
 
 header .mobile-nav ul {
@@ -91,7 +91,18 @@ header .mobile-nav ul {
 header .mobile-nav ul a {
   @apply block text-center py-2;
 }
-
+/* how to order section  */
+.HTO-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 80px;
+}
+@media (max-width: 1200px) {
+  .HTO-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 70px;
+  }
+}
 /* section divider  */
 .wrapper {
   width: calc(100% + 20px);

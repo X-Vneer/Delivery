@@ -45,7 +45,7 @@ const Card = ({ lang, isInView, Text }) => {
         className="absolute top-0 left-0 right-0 bottom-0 rounded-2xl bg-[#3f3f3f] "
       ></motion.div>
       {lang === "En" && (
-        <div className="relative bg-customWhite rounded-3xl p-10 ">
+        <div className="relative bg-customWhite rounded-3xl min-h-[350px] p-10 ">
           <motion.h3
             variants={textVaraints}
             custom={0}
@@ -66,19 +66,21 @@ const Card = ({ lang, isInView, Text }) => {
             {Text.cardText1}
           </motion.p>
 
-          <motion.p
-            variants={textVaraints}
-            custom={2}
-            initial="hidden"
-            animate={isInView && "visible"}
-            className=" text-gray-700 "
-          >
-            {Text.cardText2}
-          </motion.p>
+          {Text.cardText2 && (
+            <motion.p
+              variants={textVaraints}
+              custom={2}
+              initial="hidden"
+              animate={isInView && "visible"}
+              className=" text-gray-700 "
+            >
+              {Text.cardText2}
+            </motion.p>
+          )}
         </div>
       )}
       {lang === "Ar" && (
-        <div className="relative bg-customWhite rounded-3xl p-10 ">
+        <div className="relative bg-customWhite rounded-3xl min-h-[350px] p-10 ">
           <motion.h3
             variants={textVaraints}
             custom={0}
@@ -99,15 +101,17 @@ const Card = ({ lang, isInView, Text }) => {
             {Text.cardText1AR}
           </motion.p>
 
-          <motion.p
-            variants={textVaraints}
-            custom={2}
-            initial="hidden"
-            animate={isInView && "visible"}
-            className=" text-gray-700 "
-          >
-            {Text.cardText2AR}
-          </motion.p>
+          {Text.cardText2AR && (
+            <motion.p
+              variants={textVaraints}
+              custom={2}
+              initial="hidden"
+              animate={isInView && "visible"}
+              className=" text-gray-700 "
+            >
+              {Text.cardText2AR}
+            </motion.p>
+          )}
         </div>
       )}
     </div>

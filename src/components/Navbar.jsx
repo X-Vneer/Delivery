@@ -1,7 +1,9 @@
 import React, { useState } from "react";
-import { logo } from "../assets";
+import { logo, up } from "../assets";
 
 const Navbar = ({ lang, setLang }) => {
+  const style =
+    "absolute top-12 duration-300 group-hover:top-6 -left-2 -right-2 py-1 bg-white -z-10 opacity-0 group-hover:opacity-100 group-hover:z-10 shadow-md rounded-md flex flex-col items-center justify-center gap-1";
   const [opened, setOpened] = useState(false);
 
   return (
@@ -11,28 +13,54 @@ const Navbar = ({ lang, setLang }) => {
     >
       <div className="container relative py-2">
         <div className="flex items-center justify-between">
-          <img className="fill-main  h-12 lg:h-14" src={logo} alt="logo" />
+          <a href="#home">
+            <img className="fill-main  h-12 lg:h-14" src={logo} alt="logo" />
+          </a>
 
           {lang === "En" && (
             <nav className="nav">
               <ul>
                 <li>
-                  <a href="#home">Home</a>
+                  <a href="#how-to-order">How to order</a>
                 </li>
                 <li>
                   <a href="#about-us">About us</a>
                 </li>
                 <li>
-                  <a href="#terms-and-conditions">terms & conditions </a>
+                  <a href="#clints">Clints or Partners</a>
                 </li>
-                <li>
-                  <a href="#become-a-courier">become a courier </a>
-                </li>
+
                 <li>
                   <a href="#contact-us">contact us</a>
                 </li>
-                <li>
-                  <select
+                <li className="relative group">
+                  <span className="flex gap-1 group-hover:text-main transition-all duration-300">
+                    {lang}{" "}
+                    <img
+                      src={up}
+                      className="w-3 rotate-180 group-hover:rotate-0 duration-300"
+                      alt=""
+                    />
+                  </span>
+                  <ul className={style}>
+                    <li
+                      onClick={() => {
+                        setLang("En");
+                      }}
+                      className="hover:text-main duration-300 cursor-pointer"
+                    >
+                      En
+                    </li>
+                    <li
+                      onClick={() => {
+                        setLang("Ar");
+                      }}
+                      className="hover:text-main duration-300 cursor-pointer"
+                    >
+                      Ar
+                    </li>
+                  </ul>
+                  {/* <select
                     name="lang"
                     id="lang"
                     className="hover:text-main transition-all duration-300 focus:outline-none uppercase mx-auto"
@@ -43,7 +71,7 @@ const Navbar = ({ lang, setLang }) => {
                   >
                     <option value="En">en</option>
                     <option value="Ar">ar</option>
-                  </select>
+                  </select> */}
                 </li>
               </ul>
               <a href="#become-a-courier" className="main-btn">
@@ -52,36 +80,48 @@ const Navbar = ({ lang, setLang }) => {
             </nav>
           )}
           {lang === "Ar" && (
-            <nav className="nav">
-              <ul>
+            <nav className="nav gap-10">
+              <ul className="gap-7">
                 <li>
-                  <a href="#home">رئيسية</a>
+                  <a href="#how-to-order">كيفية الطلب</a>
                 </li>
                 <li>
                   <a href="#about-us">من نحن</a>
                 </li>
                 <li>
-                  <a href="#terms-and-conditions">الشروط و الاحكام </a>
+                  <a href="#clints">الزبائن والشركاء </a>
                 </li>
-                <li>
-                  <a href="#become-a-courier">كن موصلاً </a>
-                </li>
+
                 <li>
                   <a href="#contact-us">تواصل معنا</a>
                 </li>
-                <li>
-                  <select
-                    name="lang"
-                    id="lang"
-                    className="hover:text-main transition-all duration-300 focus:outline-none uppercase mx-auto"
-                    value={lang}
-                    onChange={(e) => {
-                      setLang(e.target.value);
-                    }}
-                  >
-                    <option value="En">en</option>
-                    <option value="Ar">ar</option>
-                  </select>
+                <li className="relative group">
+                  <span className="flex gap-1 group-hover:text-main transition-all duration-300">
+                    {lang}{" "}
+                    <img
+                      src={up}
+                      className="w-3 rotate-180 group-hover:rotate-0 duration-300"
+                      alt=""
+                    />
+                  </span>
+                  <ul className={style}>
+                    <li
+                      onClick={() => {
+                        setLang("En");
+                      }}
+                      className="hover:text-main duration-300 cursor-pointer"
+                    >
+                      En
+                    </li>
+                    <li
+                      onClick={() => {
+                        setLang("Ar");
+                      }}
+                      className="hover:text-main duration-300 cursor-pointer"
+                    >
+                      Ar
+                    </li>
+                  </ul>
                 </li>
               </ul>
               <a href="#become-a-courier" className="main-btn">
@@ -108,32 +148,46 @@ const Navbar = ({ lang, setLang }) => {
               <>
                 <ul>
                   <li>
-                    <a href="#home">Home</a>
+                    <a href="#how-to-order">how to order</a>
                   </li>
                   <li>
                     <a href="#about-us">About us</a>
                   </li>
                   <li>
-                    <a href="#terms-and-conditions">terms & conditions </a>
+                    <a href="#clints">Clints or Partners</a>
                   </li>
-                  <li>
-                    <a href="#become-a-courier">become a courier </a>
-                  </li>
+
                   <li>
                     <a href="#contact-us">contact us</a>
                   </li>
-                  <select
-                    name="lang"
-                    id="lang"
-                    className="hover:text-main transition-all duration-300 focus:outline-none uppercase mx-auto bg-customWhite"
-                    value={lang}
-                    onChange={(e) => {
-                      setLang(e.target.value);
-                    }}
-                  >
-                    <option value="En">en</option>
-                    <option value="Ar">ar</option>
-                  </select>
+                  <li className="relative group max-w-[100px] mx-auto">
+                    <span className="flex gap-1 group-hover:text-main transition-all duration-300">
+                      {lang}{" "}
+                      <img
+                        src={up}
+                        className="w-3 rotate-180 group-hover:rotate-0 duration-300"
+                        alt=""
+                      />
+                    </span>
+                    <ul className={style}>
+                      <li
+                        onClick={() => {
+                          setLang("En");
+                        }}
+                        className="hover:text-main duration-300 cursor-pointer"
+                      >
+                        En
+                      </li>
+                      <li
+                        onClick={() => {
+                          setLang("Ar");
+                        }}
+                        className="hover:text-main duration-300 cursor-pointer"
+                      >
+                        Ar
+                      </li>
+                    </ul>
+                  </li>
                 </ul>
                 <a href="#become-a-courier" className="main-btn">
                   become a courier
@@ -144,32 +198,46 @@ const Navbar = ({ lang, setLang }) => {
               <>
                 <ul>
                   <li>
-                    <a href="#home">رئيسية</a>
+                    <a href="#how-to-order">كيفية الطلب</a>
                   </li>
                   <li>
                     <a href="#about-us">من نحن</a>
                   </li>
                   <li>
-                    <a href="#terms-and-conditions">الشروط والاحكام</a>
+                    <a href="#clints">الزبائن والشركاء </a>
                   </li>
-                  <li>
-                    <a href="#become-a-courier">كن موصلاً </a>
-                  </li>
+
                   <li>
                     <a href="#contact-us">تواصل معنا</a>
                   </li>
-                  <select
-                    name="lang"
-                    id="lang"
-                    className="hover:text-main transition-all duration-300 focus:outline-none uppercase mx-auto bg-customWhite"
-                    value={lang}
-                    onChange={(e) => {
-                      setLang(e.target.value);
-                    }}
-                  >
-                    <option value="En">en</option>
-                    <option value="Ar">ar</option>
-                  </select>
+                  <li className="relative group max-w-[100px] mx-auto">
+                    <span className="flex gap-1 group-hover:text-main transition-all duration-300">
+                      {lang}{" "}
+                      <img
+                        src={up}
+                        className="w-3 rotate-180 group-hover:rotate-0 duration-300"
+                        alt=""
+                      />
+                    </span>
+                    <ul className={style}>
+                      <li
+                        onClick={() => {
+                          setLang("En");
+                        }}
+                        className="hover:text-main duration-300 cursor-pointer"
+                      >
+                        En
+                      </li>
+                      <li
+                        onClick={() => {
+                          setLang("Ar");
+                        }}
+                        className="hover:text-main duration-300 cursor-pointer"
+                      >
+                        Ar
+                      </li>
+                    </ul>
+                  </li>
                 </ul>
                 <a href="#become-a-courier" className="main-btn">
                   كن موصلاً

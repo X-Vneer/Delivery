@@ -1,26 +1,22 @@
 import React from "react";
 import AliceCarousel from "react-alice-carousel";
-import { TermsAndConditionsText } from "../constants";
+import { ClintsText } from "../constants";
 
 import Card from "./Card";
 import { useRef } from "react";
 import { useInView } from "framer-motion";
 
-const TermsAndConditions = ({ lang }) => {
+const Clints = ({ lang }) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.4 });
 
-  let myArray = [];
-  for (let i = 0; i < 10; i++) {
-    myArray.push(
-      <Card lang={lang} isInView={isInView} Text={TermsAndConditionsText} />
-    );
-  }
-  console.log("hi");
+  let myArray = ClintsText.map((ele, ind) => {
+    return <Card key={ind} lang={lang} isInView={isInView} Text={ele} />;
+  });
 
   return (
     <section
-      id="terms-and-conditions"
+      id="clints"
       dir={lang === "En" ? "ltr" : "rtl"}
       className={
         lang === "Ar"
@@ -32,12 +28,12 @@ const TermsAndConditions = ({ lang }) => {
       <div className="container">
         {lang === "En" && (
           <h3 className="font-semibold text-white mb-10 text-2xl">
-            #Terms & Conditions
+            #Clints or Partners
           </h3>
         )}
         {lang === "Ar" && (
           <h3 className="font-semibold text-white mb-10 text-2xl">
-            #الشروط و الاحكام
+            #الزبائن والشركاء
           </h3>
         )}
         <div>
@@ -69,4 +65,4 @@ const TermsAndConditions = ({ lang }) => {
   );
 };
 
-export default TermsAndConditions;
+export default Clints;

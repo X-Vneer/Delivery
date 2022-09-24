@@ -6,7 +6,8 @@ import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import SectionDivider from "./components/SectionDivider";
 import SingleDivider from "./components/SingleDivider";
-import TermsAndConditions from "./components/TermsAndConditions";
+import Clints from "./components/Clints";
+import HowToOrder from "./components/HowToOrder";
 
 function App() {
   const [lang, setLang] = useState("En");
@@ -14,10 +15,11 @@ function App() {
     <>
       <Navbar lang={lang} setLang={setLang} />
       <Hero lang={lang} />
+      <HowToOrder lang={lang} />
       <SectionDivider />
       <AboutUs lang={lang} />
       <SingleDivider />
-      <TermsAndConditions lang={lang} />
+      <Clints lang={lang} />
       <BACSection lang={lang} />
       <Footer lang={lang} />
     </>

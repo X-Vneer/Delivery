@@ -1,7 +1,7 @@
 import React from "react";
 import { googlePlay, AppStore } from "../assets";
 
-const Footer = () => {
+const Footer = ({ lang }) => {
   return (
     <footer
       id="footer"

@@ -6,7 +6,7 @@ module.exports = {
       colors: {
         main: "#00dbd1",
         secondry: "#003b63",
-        customWhite: "#F8F8F8",
+        customWhite: "#F6f6f6",
         customBlack: "#282828",
       },
       container: {
