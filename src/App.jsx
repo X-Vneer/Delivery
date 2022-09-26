@@ -23,8 +23,7 @@ function App() {
       <Clints lang={lang} />
       <BACSection lang={lang} />
       <SingleDivider />
-
-      <TermsAndConditions lang={lang} />
+      {/* <TermsAndConditions lang={lang} /> */}
       <Footer lang={lang} />
     </>
   );
