@@ -209,7 +209,7 @@ const HowToOrder = ({ lang }) => {
               }
               src={HTO1}
               className="rounded-3xl w-full max-w-[400px] mx-auto"
-              alt=""
+              alt="Delivey guy"
             />
           </div>
           {/*  */}

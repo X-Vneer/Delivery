@@ -28,14 +28,18 @@ const Footer = ({ lang }) => {
     >
       <div className="container py-5">
         <div className="flex gap-5  justify-center sm:justify-end mb-5">
-          <a href="">
-            <img src={whats} className="w-10 bg-white rounded-full" alt="" />
+          <a href="#" title="contact us via whatsapp">
+            <img
+              src={whats}
+              className="w-10 bg-white rounded-full"
+              alt="whatsapp"
+            />
           </a>
-          <a href=" ">
+          <a href="# " title="instagram">
             <img src={insta} className="w-10" alt="instagram" />
           </a>
-          <a href=" ">
-            <img src={tel} className="w-10" alt="instagram" />
+          <a href="# " title="contact us via telegram">
+            <img src={tel} className="w-10" alt="telegram" />
           </a>
         </div>
         <div className="flex gap-5  sm:gap-9 mb-16">
@@ -45,14 +49,14 @@ const Footer = ({ lang }) => {
               {lang === "En" ? " Download the application" : "تحميل التطبيق"}
             </h1>
             <div className="flex gap-4 py-6 justify-center md:justify-start flex-wrap f-full shrink">
-              <a href="#">
+              <a href="#" title="download from appsotre">
                 <img
                   className="h-10 hover:-rotate-3 transition-all duration-300"
                   src={AppStore}
                   alt="download from app store"
                 />
               </a>
-              <a href="#">
+              <a href="#" title="download from google play">
                 <img
                   className="h-10 hover:-rotate-3 transition-all duration-300"
                   src={googlePlay}

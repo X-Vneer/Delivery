@@ -13,7 +13,7 @@ const Navbar = ({ lang, setLang }) => {
     >
       <div className="container relative py-2">
         <div className="flex items-center justify-between">
-          <a href="#home">
+          <a href="#home" title="home">
             <img className="fill-main  h-12 lg:h-14" src={logo} alt="logo" />
           </a>
 
@@ -44,6 +44,7 @@ const Navbar = ({ lang, setLang }) => {
                   </span>
                   <ul className={style}>
                     <li
+                      role="button"
                       onClick={() => {
                         setLang("En");
                       }}
@@ -52,6 +53,7 @@ const Navbar = ({ lang, setLang }) => {
                       En
                     </li>
                     <li
+                      role="button"
                       onClick={() => {
                         setLang("Ar");
                       }}
@@ -60,18 +62,6 @@ const Navbar = ({ lang, setLang }) => {
                       Ar
                     </li>
                   </ul>
-                  {/* <select
-                    name="lang"
-                    id="lang"
-                    className="hover:text-main transition-all duration-300 focus:outline-none uppercase mx-auto"
-                    value={lang}
-                    onChange={(e) => {
-                      setLang(e.target.value);
-                    }}
-                  >
-                    <option value="En">en</option>
-                    <option value="Ar">ar</option>
-                  </select> */}
                 </li>
               </ul>
               <a href="#become-a-courier" className="main-btn">
@@ -106,6 +96,7 @@ const Navbar = ({ lang, setLang }) => {
                   </span>
                   <ul className={style}>
                     <li
+                      role="button"
                       onClick={() => {
                         setLang("En");
                       }}
@@ -114,6 +105,7 @@ const Navbar = ({ lang, setLang }) => {
                       En
                     </li>
                     <li
+                      role="button"
                       onClick={() => {
                         setLang("Ar");
                       }}
@@ -131,6 +123,8 @@ const Navbar = ({ lang, setLang }) => {
           )}
           {/* mobile nav */}
           <button
+            type="button"
+            aria-label="open and close navbar"
             id="menu-btn"
             onClick={() => {
               setOpened((pre) => !pre);
@@ -221,6 +215,7 @@ const Navbar = ({ lang, setLang }) => {
                     </span>
                     <ul className={style}>
                       <li
+                        role="button"
                         onClick={() => {
                           setLang("En");
                         }}
@@ -229,6 +224,7 @@ const Navbar = ({ lang, setLang }) => {
                         En
                       </li>
                       <li
+                        role="button"
                         onClick={() => {
                           setLang("Ar");
                         }}

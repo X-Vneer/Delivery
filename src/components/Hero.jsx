@@ -128,14 +128,14 @@ const Hero = ({ lang }) => {
             )}
             <div>
               <div className="flex gap-6 py-6 justify-center md:justify-start flex-wrap">
-                <a href="#">
+                <a href="#" title="download from app store">
                   <img
                     className="h-12 hover:-rotate-3 transition-all duration-300"
                     src={AppStore}
                     alt="download from app store"
                   />
                 </a>
-                <a href="#">
+                <a href="#" title="download from google play">
                   <img
                     className="h-12 hover:-rotate-3 transition-all duration-300"
                     src={googlePlay}
