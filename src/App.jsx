@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import AboutUs from "./components/AboutUs";
 import BACSection from "./components/BACSection";
 import Footer from "./components/Footer";
@@ -12,6 +12,11 @@ import TermsAndConditions from "./components/TermsAndConditions";
 
 function App() {
   const [lang, setLang] = useState("En");
+  useEffect(() => {
+    const lang = window.localStorage.getItem("lang");
+    setLang(lang || "En");
+  }, []);
+
   return (
     <>
       <Navbar lang={lang} setLang={setLang} />

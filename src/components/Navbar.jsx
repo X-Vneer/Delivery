@@ -46,6 +46,7 @@ const Navbar = ({ lang, setLang }) => {
                     <li
                       role="button"
                       onClick={() => {
+                        window.localStorage.setItem("lang", "En");
                         setLang("En");
                       }}
                       className="hover:text-main duration-300 cursor-pointer"
@@ -55,6 +56,8 @@ const Navbar = ({ lang, setLang }) => {
                     <li
                       role="button"
                       onClick={() => {
+                        window.localStorage.setItem("lang", "Ar");
+
                         setLang("Ar");
                       }}
                       className="hover:text-main duration-300 cursor-pointer"
@@ -98,6 +101,8 @@ const Navbar = ({ lang, setLang }) => {
                     <li
                       role="button"
                       onClick={() => {
+                        window.localStorage.setItem("lang", "En");
+
                         setLang("En");
                       }}
                       className="hover:text-main duration-300 cursor-pointer"
@@ -107,6 +112,8 @@ const Navbar = ({ lang, setLang }) => {
                     <li
                       role="button"
                       onClick={() => {
+                        window.localStorage.setItem("lang", "Ar");
+
                         setLang("Ar");
                       }}
                       className="hover:text-main duration-300 cursor-pointer"
@@ -166,6 +173,8 @@ const Navbar = ({ lang, setLang }) => {
                     <ul className={style}>
                       <li
                         onClick={() => {
+                          window.localStorage.setItem("lang", "En");
+
                           setLang("En");
                         }}
                         className="hover:text-main duration-300 cursor-pointer"
@@ -174,6 +183,8 @@ const Navbar = ({ lang, setLang }) => {
                       </li>
                       <li
                         onClick={() => {
+                          window.localStorage.setItem("lang", "Ar");
+
                           setLang("Ar");
                         }}
                         className="hover:text-main duration-300 cursor-pointer"
@@ -217,6 +228,8 @@ const Navbar = ({ lang, setLang }) => {
                       <li
                         role="button"
                         onClick={() => {
+                          window.localStorage.setItem("lang", "En");
+
                           setLang("En");
                         }}
                         className="hover:text-main duration-300 cursor-pointer"
@@ -226,6 +239,8 @@ const Navbar = ({ lang, setLang }) => {
                       <li
                         role="button"
                         onClick={() => {
+                          window.localStorage.setItem("lang", "Ar");
+
                           setLang("Ar");
                         }}
                         className="hover:text-main duration-300 cursor-pointer"
