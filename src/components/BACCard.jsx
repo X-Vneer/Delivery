@@ -67,7 +67,7 @@ const BACCard = ({ lang }) => {
         </div>
       )}
       {lang === "Ar" && (
-        <div>
+        <div className="py-9">
           <h1 className="text-white font-semibold leading-tight text-[24px] mb-3">
             {BACCardText.titleAR}
             <img src={bag} className="inline h-7 -mt-2" alt="bag" />

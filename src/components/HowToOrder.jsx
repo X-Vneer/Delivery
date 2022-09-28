@@ -356,7 +356,7 @@ const HowToOrder = ({ lang }) => {
                   }
                 : {}
             }
-            className="bg-main rounded-3xl min-h-[330px] max-w-[400px] mx-auto flex justify-end flex-col p-10 "
+            className="bg-main rounded-3xl min-h-[330px] max-w-[400px] mx-auto flex justify-end flex-col p-10 w-full "
           >
             <div>
               <h1 className="uppercase font-bold text-3xl text-white  ">

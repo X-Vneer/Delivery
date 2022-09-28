@@ -20,7 +20,7 @@ const HTOCard = ({ isInView, icon, text, ind, lang }) => {
             }
           : {}
       }
-      className="bg-customWhite rounded-3xl  p-10 flex flex-col justify-between text-customBlack max-w-[400px] mx-auto min-h-[330px]"
+      className="bg-customWhite rounded-3xl  p-10 flex flex-col justify-between text-customBlack max-w-[400px] mx-auto min-h-[330px] h-full"
     >
       <img src={icon} className="w-10 mb-8" alt="icon" />
       <div>
